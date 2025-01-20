@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Logs and debugging
+*.log
+*.out
+*.err
+scrapy_output/
+
+# Environment files
+.env
+*.env
+
+# Python virtual environment
+venv/
+env/
+
+# Scrapy specific
+.scrapy/
+*.sqlite
+*.db
+
+# Configuration and build files
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# PyCharm files
+.idea/
+
+# Jupyter Notebook checkpoints (if you analyze data in notebooks)
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
