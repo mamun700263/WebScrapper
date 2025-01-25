@@ -62,9 +62,15 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "Bookscraper.pipelines.BookscraperPipeline": 300,
-#}
+ITEM_PIPELINES = {
+   "Bookscraper.pipelines.BookscraperPipeline": 300,
+   "Bookscraper.pipelines.MongoDBPipeline": 400,
+}
+
+# MongoDB settings
+MONGO_URI = 'mongodb://localhost:27017'  # Update with your URI if different
+MONGO_DATABASE = 'scrapy_data'          # Database name
+
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
